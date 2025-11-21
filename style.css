@@ -243,10 +243,19 @@ footer {
 }
 
 @media(max-width:560px) {
-
-  /*nav .nav-links {
-    display:none;*/
+  nav {
+    flex-wrap: wrap;
   }
+
+  nav .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+}
 
   .overlay {
     width:90%;
