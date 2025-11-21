@@ -244,8 +244,8 @@ footer {
 
 @media(max-width:560px) {
 
-  nav .nav-links {
-    display:none;
+  /*nav .nav-links {
+    display:none;*/
   }
 
   .overlay {
