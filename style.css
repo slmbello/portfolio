@@ -50,14 +50,6 @@ nav .logo {
   border-radius:6px;
   font-weight:600;
 }
-
-/* Hamburger Button */
-.hamburger {
-  display:none;
-  font-size:24px;
-  cursor:pointer;
-}
-
 /* HERO */
 .hero {
   position:relative;
@@ -229,36 +221,6 @@ footer {
   font-size:14px;
 }
 
-/* RESPONSIVE NAV — HAMBURGER MENU */
-@media(max-width:560px) {
-
-  .hamburger {
-    display:block;
-  }
-
-  /* Hide menu initially */
-  .nav-links {
-    display:none;
-    flex-direction:column;
-    width:100%;
-    gap:14px;
-    margin-top:14px;
-    padding-bottom:10px;
-  }
-
-  /* Show when active */
-  .nav-links.active {
-    display:flex;
-  }
-
-  nav {
-    flex-wrap:wrap;
-  }
-
-  nav .logo {
-    font-size:18px;
-  }
-}
 
 /* Other Responsive Layout Rules */
 @media(max-width:820px) {
