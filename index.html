@@ -18,7 +18,13 @@
 <nav>
   <div class="logo">Bello Abdulsalam</div>
 
-  <div class="nav-links">
+  <!-- Hamburger button -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Mobile + Desktop menu -->
+  <div class="nav-links" id="mobileMenu">
     <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -45,12 +51,12 @@
   <div class="about-content">
     <h2>About Me</h2>
     <p>
-     I’m Bello Abdulsalam— a web developer and designer who creates clean,
-      responsive interfaces and smooth digital experience with HTML,CSS AND JAVASCRIPT
+     I’m Bello Abdulsalam — a web developer and designer who creates clean,
+      responsive interfaces and smooth digital experience with HTML, CSS AND JAVASCRIPT.
     </p>
 
     <div class="about-socials">
-      <p><i class="fab fa-instagram"></i>instagram;@slmbello.exe</p>
+      <p><i class="fab fa-instagram"></i>instagram; @slmbello.exe</p>
       <p><i class="fas fa-envelope"></i> abdulsalam.toyo@gmail.com</p>
     </div>
   </div>
@@ -100,6 +106,16 @@
 <footer>
   © 2025 Bello Abdulsalam — All Rights Reserved
 </footer>
+
+<!-- Hamburger Menu Script -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.onclick = () => {
+    mobileMenu.classList.toggle("active");
+  };
+</script>
 
 </body>
 </html>
