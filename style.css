@@ -24,7 +24,7 @@ nav {
   padding: 16px 18px;
   display: flex;
   flex-direction: column;      /* ⭐ Stack rows */
-  align-items: center;         /* Center horizontally */
+  align-items: flex-start;         /* starts from the left */
   justify-content: center;
   border-bottom: 1px solid #f5e8e8;
   text-align: center;
