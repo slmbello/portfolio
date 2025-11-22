@@ -20,40 +20,66 @@ body {
 /* NAV */
 /* NAV */
 nav {
-  padding:16px 18px;
-  display:flex;
-  flex-direction:column;      /* ⭐ Stack logo + links on mobile */
-  align-items:center;
-  justify-content:center;
-  border-bottom:1px solid #f5e8e8;
-  text-align:center;
+  width: 100%;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;      /* ⭐ Stack rows */
+  align-items: center;         /* Center horizontally */
+  justify-content: center;
+  border-bottom: 1px solid #f5e8e8;
+  text-align: center;
 }
 
 nav .logo {
-  font-weight:600;
-  font-size:22px;
-  margin-bottom:8px;          /* space between logo + menu */
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.1;
 }
 
 .nav-links {
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;             /* ⭐ Menu wraps neatly on small screens */
-  justify-content:center;
+  margin-top: 10px;            /* Space between logo & links */
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;             /* ⭐ Forces menu to wrap on phones */
+  justify-content: center;
 }
 
 .nav-links a {
-  text-decoration:none;
-  color:#111;
-  font-size:14px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
 }
 
 .hire-btn {
-  padding:6px 14px;
-  background:var(--accent);
-  color:#fff;
-  border-radius:6px;
-  font-weight:600;
+  padding: 6px 12px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* MOBILE FIX */
+@media (max-width: 560px) {
+
+  nav {
+    padding: 14px 14px;
+  }
+
+  nav .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hire-btn {
+    padding: 6px 12px;
+  }
 }
 
 /* HERO */
